@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="Simple Serial Terminal.exe" version="1.0.0.2" publicKeyToken="9bc4f7d96ad44099" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="Terminal Icon.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="Simple Serial Terminal" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="Simple Serial Terminal.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Simple Serial Terminal.exe" size="63392">
+      <assemblyIdentity name="Simple Serial Terminal" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>H9k/QpLCU5rzdQGSNq9uDSX/ZOtZRAwvtLTcgeAzvAU=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="Simple Serial Terminal.exe.config" size="188">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>c922zfRb5ORzqEo8SDjt8Mx8lDMhGTWhqKcK/oileDM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Terminal Icon.ico" size="15086">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>XdwtdqvrOYgfONKC56e6OWJKRcmhNsUgpiPRPOMEVKg=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=QA-PC\User" issuerKeyHash="3b8b673f1e50997217096488202f933e28848cad" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>sfHPxmgzzo1oXfHgvWd5hnaDDjNcldAJ59m+LZQMsgU=</DigestValue></Reference></SignedInfo><SignatureValue>AhRk8qLbnCvUlP2F+EZ7r+1/mWBDLi26PcHJDhWVUdYep32ea0EDi4RY5DXKe6OmE0TBY8qNbPVL9f5RvlnKi81CRFcWkx7WQ7vJbkntcFa+Pg74kKiflzpIuaViCqnkmYDxxESG5FS41x6damIrBYOTi7R0OI3KGQ3ryG+sxAU=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>tlRAF79/NU1nOlVgXy1daDQb8sASbWQI0PciT+UnyhzyWRK4+PkKfNLtL16zRMexKyw5NgobCZQcK+8COj/yGbiVATZNAHJm49D6WyNJYXGRDOceeP+RzHUUHep0a2pdwSjQ+fRLicDKw9M3Ayb2mSDHO+JTo8hWp41Ui5Ulnok=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="05b20c942dbed9e709d0955c330e8376867967bde0f15d688dce3368c6cff1b1" Description="" Url=""><as:assemblyIdentity name="Simple Serial Terminal.exe" version="1.0.0.2" publicKeyToken="9bc4f7d96ad44099" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=QA-PC\User</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>hbVLyKKOjHrJGxzxkrjuCk1bXqcsYhW4921CgTRgiu8=</DigestValue></Reference></SignedInfo><SignatureValue>roRDmtxgZhYr7zh/eID33XnHwBMoXYZ1XfEeQX9eos1n1ccJZ3ERSbSfbToxVIbI+NBQhbpGsNow1NaMD8ni/CYUcf4bIGiFOWcq+5z1x1TrPv4c/2I4LSC1/Giwtz6AC0vj/XeCk5cb8XJnFnI+Avuw1S4WiEBaf7zmRR/C02Y=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>tlRAF79/NU1nOlVgXy1daDQb8sASbWQI0PciT+UnyhzyWRK4+PkKfNLtL16zRMexKyw5NgobCZQcK+8COj/yGbiVATZNAHJm49D6WyNJYXGRDOceeP+RzHUUHep0a2pdwSjQ+fRLicDKw9M3Ayb2mSDHO+JTo8hWp41Ui5Ulnok=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIBwTCCASqgAwIBAgIQFw0ALS1/SJ5NYLFeB0ywqTANBgkqhkiG9w0BAQsFADAfMR0wGwYDVQQDHhQAUQBBAC0AUABDAFwAVQBzAGUAcjAeFw0xOTAzMDcxODE3MDdaFw0yMDAzMDcwMDE3MDdaMB8xHTAbBgNVBAMeFABRAEEALQBQAEMAXABVAHMAZQByMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC2VEAXv381TWc6VWBfLV1oNBvywBJtZAjQ9yJP5SfKHPJZErj4+Qp80u0vXrNEx7ErLDk2ChsJlBwr7wI6P/IZuJUBNk0Acmbj0PpbI0lhcZEM5x54/5HMdRQd6nRral3BKND59EuJwMrD0zcDJvaZIMc74lOjyFanjVSLlSWeiQIDAQABMA0GCSqGSIb3DQEBCwUAA4GBAC1JF5+H388bOcjmvPV/13PkWfFP/CYyDrY7WibfO+SwSXRLmugWNgLkbYSwknsTtN/0UAwqz7OCNa30WRkzMhRZ76sokkMB1FH6Il7WqFCZQvaT9y6fkS0TYWHeb5C0RWDwMQ/m9PMixLrB9jut6OWypZVHvFXzr8C+ce0/SaJV</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
